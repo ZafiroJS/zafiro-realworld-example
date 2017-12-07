@@ -27,7 +27,7 @@
     "google-auth-library": "0.12.0",
     "helmet": "3.9.0",
     "inversify": "4.6.0",
-    "inversify-express-utils": "5.0.0",
+    "inversify-express-utils": "5.1.2",
     "pg": "7.4.0",
     "pino": "4.10.2",
     "reflect-metadata": "0.1.10",
