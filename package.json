@@ -29,7 +29,7 @@
     "helmet": "3.9.0",
     "inversify": "4.9.0",
     "inversify-express-utils": "5.2.0",
-    "pg": "7.4.0",
+    "pg": "7.4.1",
     "pino": "4.10.3",
     "reflect-metadata": "0.1.10",
     "typeorm": "0.1.7",
