@@ -32,7 +32,7 @@
     "pg": "7.4.1",
     "pino": "4.10.3",
     "reflect-metadata": "0.1.10",
-    "typeorm": "0.1.7",
+    "typeorm": "0.1.11",
     "zafiro": "1.0.0-alpha.13",
     "zafiro-validators": "1.1.0"
   },
