@@ -25,7 +25,7 @@
     "tslib": "1.9.0",
     "chalk": "2.3.0",
     "express": "4.16.2",
-    "google-auth-library": "1.0.0",
+    "google-auth-library": "1.1.0",
     "helmet": "3.9.0",
     "inversify": "4.9.0",
     "inversify-express-utils": "5.2.0",
