@@ -30,7 +30,7 @@
     "inversify": "4.10.0",
     "inversify-express-utils": "5.2.1",
     "pg": "7.4.1",
-    "pino": "4.10.3",
+    "pino": "4.10.4",
     "reflect-metadata": "0.1.12",
     "typeorm": "0.1.7",
     "zafiro": "1.0.0-alpha.13",
