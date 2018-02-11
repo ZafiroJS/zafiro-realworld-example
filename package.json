@@ -23,7 +23,7 @@
   "homepage": "https://github.com/remojansen/zafiro-realworld-example#readme",
   "dependencies": {
     "tslib": "1.9.0",
-    "chalk": "2.3.0",
+    "chalk": "2.3.1",
     "express": "4.16.2",
     "google-auth-library": "1.2.1",
     "helmet": "3.10.0",
