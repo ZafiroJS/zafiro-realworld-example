@@ -7,22 +7,22 @@ export default class User implements interfaces.User {
 
     @PrimaryGeneratedColumn()
     @mustBe(a.number().optional())
-    public id: number;
+    public id!: number;
 
     @Column()
     @mustBe(a.string().email().required())
-    public email: string;
+    public email!: string;
 
     @Column()
     @mustBe(a.string().required())
-    public givenName: string;
+    public givenName!: string;
 
     @Column()
     @mustBe(a.string().required())
-    public familyName: string;
+    public familyName!: string;
 
     @Column()
     @mustBe(a.boolean().required())
-    public isBanned: boolean;
+    public isBanned!: boolean;
 
 }

@@ -7,10 +7,10 @@ export default class Role implements interfaces.Role {
 
     @PrimaryGeneratedColumn()
     @mustBe(a.number().optional())
-    public id: number;
+    public id!: number;
 
     @Column()
     @mustBe(a.string().required())
-    public name: string;
+    public name!: string;
 
 }

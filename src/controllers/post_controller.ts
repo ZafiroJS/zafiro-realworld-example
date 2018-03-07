@@ -16,7 +16,14 @@ import Post from "../entities/post";
 @controller("/api/v1/posts", MIDDLEWARE.Log)
 export default class PostController extends BaseHttpController {
 
-    @inject(TYPE.PostRepository) private readonly _repository: Repository<interfaces.Post>;
+    private readonly _repository: Repository<interfaces.Post>;
+
+    public constructor(
+        @inject(TYPE.PostRepository) repository: Repository<interfaces.Post>
+    ) {
+        super();
+        this._repository = repository;
+    }
 
     @httpGet("/")
     private async get() {

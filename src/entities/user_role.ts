@@ -7,14 +7,14 @@ import Role from "./role";
 export default class UserRole implements interfaces.UserRole {
 
     @PrimaryGeneratedColumn()
-    public id: number;
+    public id!: number;
 
     @ManyToOne(type => User, user => user.id)
     @JoinColumn()
-    public user: number;
+    public user!: number;
 
     @ManyToOne(type => Role, role => role.id)
     @JoinColumn()
-    public role: number;
+    public role!: number;
 
 }
