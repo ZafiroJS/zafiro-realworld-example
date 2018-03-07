@@ -30,6 +30,22 @@ export default class CustomAccountRepository implements AccountRepository {
     @inject(TYPE.CommentRepository) private readonly _commentRepository: Repository<interfaces.Comment>;
     @inject(ZAFIRO_TYPE.Logger) private readonly _logger: Logger;
 
+    public constructor(
+        readonly userRepository: Repository<interfaces.User>,
+        readonly roleRepository: Repository<interfaces.Role>,
+        readonly userRoleRepository: Repository<interfaces.UserRole>,
+        readonly postRepository: Repository<interfaces.Post>,
+        readonly commentRepository: Repository<interfaces.Comment>,
+        readonly logger: Logger
+    ) {
+        this._userRepository = userRepository;
+        this._roleRepository = roleRepository;
+        this._userRoleRepository = userRoleRepository;
+        this._postRepository = postRepository;
+        this._commentRepository = commentRepository;
+        this._logger = logger;
+    }
+
     public async isAuthenticated(userDetails: any): Promise<boolean> {
         if (userDetails !== null && userDetails !== undefined) {
             return Promise.resolve(true);

@@ -7,7 +7,14 @@ import { User } from "../interfaces";
 @controller("/api/v1/account", MIDDLEWARE.Log)
 export default class AccountController extends BaseHttpController {
 
-    @inject(TYPE.UserRepository) private readonly _repository: Repository<User>;
+    private readonly _repository: Repository<User>;
+
+    public constructor(
+        @inject(TYPE.UserRepository) repository: Repository<User>
+    ) {
+        super();
+        this._repository = repository;
+    }
 
     @httpGet("/")
     private async get() {

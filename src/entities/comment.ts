@@ -14,20 +14,20 @@ import Post from "./post";
 export default class Comment implements interfaces.Comment {
 
     @PrimaryGeneratedColumn()
-    public id: number;
+    public id!: number;
 
     @ManyToOne(type => User, user => user.id)
     @JoinColumn()
-    public user: number;
+    public user!: number;
 
     @ManyToOne(type => Post, post => post.id)
     @JoinColumn()
-    public post: number;
+    public post!: number;
 
     @Column()
-    public content: string;
+    public content!: string;
 
     @CreateDateColumn()
-    public createdDate: Date;
+    public createdDate!: Date;
 
 }

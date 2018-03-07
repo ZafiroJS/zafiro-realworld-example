@@ -15,23 +15,23 @@ export default class Post implements interfaces.Post {
 
     @PrimaryGeneratedColumn()
     @mustBe(a.number().optional())
-    public id: number;
+    public id!: number;
 
     @ManyToOne(type => User, user => user.id)
     @JoinColumn()
     @mustBe(a.number().required())
-    public user: number;
+    public user!: number;
 
     @Column()
     @mustBe(a.string().min(3).max(60).required())
-    public title: string;
+    public title!: string;
 
     @Column()
     @mustBe(a.string().required())
-    public content: string;
+    public content!: string;
 
     @CreateDateColumn()
     @mustBe(a.date().optional())
-    public createdDate: Date;
+    public createdDate!: Date;
 
 }
