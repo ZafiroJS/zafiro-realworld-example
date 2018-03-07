@@ -7,10 +7,14 @@ import CustomAccountRepository from "./repositories/account_repository";
 
 (async () => {
 
+    const containerModules = [
+        bindings
+    ];
+
     try {
         const result = await createApp({
             database: "postgres",
-            containerModules: [bindings],
+            containerModules: containerModules,
             AccountRepository: CustomAccountRepository,
             expressConfig: expressConfig
         });
