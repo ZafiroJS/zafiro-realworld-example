@@ -29,7 +29,7 @@
     "inversify": "4.11.1",
     "inversify-express-utils": "5.2.1",
     "pg": "7.4.1",
-    "pino": "4.14.0",
+    "pino": "6.3.2",
     "reflect-metadata": "0.1.12",
     "tslib": "1.9.0",
     "typeorm": "0.1.16",
